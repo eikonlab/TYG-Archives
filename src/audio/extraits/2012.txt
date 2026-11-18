@@ -1,0 +1,76 @@
+01 | 2010/Young Gods 2010-09-19 Lausanne/younggods2010-09-19t02.flac | 1:39
+02 | 2010/Young Gods 2010-09-19 Lausanne/younggods2010-09-19t04.flac | 1:57
+03 | 2010/Young Gods 2010-09-19 Lausanne/younggods2010-09-19t05.flac | 1:51
+04 | 2010/Young Gods 2010-09-19 Lausanne/younggods2010-09-19t07.flac | 1:28
+05 | 2010/Young Gods 2010-09-19 Lausanne/younggods2010-09-19t09.flac | 1:57
+06 | 2010/Young Gods 2010-11-16 Lausanne/03-blooming.flac | 1:49
+07 | 2010/Young Gods 2010-11-16 Lausanne/05-supersonic.flac | 1:38
+08 | 2010/Young Gods 2010-11-16 Lausanne/07-mister sunshine.flac | 2:26
+09 | 2010/Young Gods 2010-11-16 Lausanne/08-tenter le grillage.flac | 2:27
+10 | 2010/Young Gods 2010-11-16 Lausanne/10-once again - encore.flac | 3:43
+11 | 2010/Young Gods 2010-11-16 Lausanne/12-kissing the sun.flac | 1:49
+12 | 2010/Young Gods 2010-08-14 Zofingen/02 Young Gods-Heitere 2010.flac | 2:23
+13 | 2010/Young Gods 2010-08-14 Zofingen/04 Young Gods-Heitere 2010.flac | 1:36
+14 | 2010/Young Gods 2010-08-14 Zofingen/07 Young Gods-Heitere 2010.flac | 1:28
+15 | 2010/Young Gods 2010-08-14 Zofingen/09 Young Gods-Heitere 2010.flac | 1:08
+16 | 2010/Young Gods 2010-09-19 Lausanne/younggods2010-09-19t01.flac | 2:06
+17 | 2010/Young Gods 2010-09-19 Lausanne/younggods2010-09-19t03.flac | 1:02
+18 | 2010/Young Gods 2010-09-19 Lausanne/younggods2010-09-19t06.flac | 4:28
+19 | 2010/Young Gods 2010-09-19 Lausanne/younggods2010-09-19t08.flac | 1:06
+20 | 2010/Young Gods 2010-11-16 Lausanne/04-no land's man.flac | 1:58
+21 | 2010/Young Gods 2010-11-16 Lausanne/06-about time.flac | 2:16
+22 | 2010/Young Gods 2010-11-16 Lausanne/09-everythere.flac | 1:40
+23 | 2010/Young Gods 2010-11-16 Lausanne/11-skinflower.flac | 1:51
+24 | 2010/Young Gods 2010-08-14 Zofingen/01 Young Gods-Heitere 2010.flac | 4:01
+25 | 2010/Young Gods 2010-08-14 Zofingen/03 Young Gods-Heitere 2010.flac | 3:32
+26 | 2010/Young Gods 2010-08-14 Zofingen/05 Young Gods-Heitere 2010.flac | 4:35
+27 | 2010/Young Gods 2010-08-14 Zofingen/06 Young Gods-Heitere 2010.flac | 4:06
+28 | 2010/Young Gods 2010-08-14 Zofingen/08 Young Gods-Heitere 2010.flac | 3:14
+29 | 2010/Young Gods 2010-08-14 Zofingen/10 Young Gods-Heitere 2010.flac | 6:22
+30 | 2010/Young Gods 2010-09-19 Lausanne/younggods2010-09-19t02.flac | 3:35
+31 | 2010/Young Gods 2010-09-19 Lausanne/younggods2010-09-19t04.flac | 4:12
+32 | 2010/Young Gods 2010-09-19 Lausanne/younggods2010-09-19t05.flac | 3:59
+33 | 2010/Young Gods 2010-09-19 Lausanne/younggods2010-09-19t07.flac | 3:11
+34 | 2010/Young Gods 2010-09-19 Lausanne/younggods2010-09-19t09.flac | 4:14
+35 | 2010/Young Gods 2010-11-16 Lausanne/03-blooming.flac | 3:56
+36 | 2010/Young Gods 2010-11-16 Lausanne/05-supersonic.flac | 3:32
+37 | 2010/Young Gods 2010-11-16 Lausanne/07-mister sunshine.flac | 5:15
+38 | 2010/Young Gods 2010-11-16 Lausanne/08-tenter le grillage.flac | 5:17
+39 | 2010/Young Gods 2010-11-16 Lausanne/10-once again - encore.flac | 8:00
+40 | 2010/Young Gods 2010-11-16 Lausanne/12-kissing the sun.flac | 3:55
+41 | 2010/Young Gods 2010-08-14 Zofingen/02 Young Gods-Heitere 2010.flac | 5:09
+42 | 2010/Young Gods 2010-08-14 Zofingen/04 Young Gods-Heitere 2010.flac | 3:29
+43 | 2010/Young Gods 2010-08-14 Zofingen/07 Young Gods-Heitere 2010.flac | 3:11
+44 | 2010/Young Gods 2010-08-14 Zofingen/09 Young Gods-Heitere 2010.flac | 2:28
+45 | 2010/Young Gods 2010-09-19 Lausanne/younggods2010-09-19t01.flac | 4:32
+46 | 2010/Young Gods 2010-09-19 Lausanne/younggods2010-09-19t03.flac | 2:13
+47 | 2010/Young Gods 2010-09-19 Lausanne/younggods2010-09-19t06.flac | 9:39
+48 | 2010/Young Gods 2010-09-19 Lausanne/younggods2010-09-19t08.flac | 2:22
+49 | 2010/Young Gods 2010-11-16 Lausanne/04-no land's man.flac | 4:16
+50 | 2010/Young Gods 2010-11-16 Lausanne/06-about time.flac | 4:54
+51 | 2010/Young Gods 2010-11-16 Lausanne/09-everythere.flac | 3:37
+52 | 2010/Young Gods 2010-11-16 Lausanne/11-skinflower.flac | 4:00
+53 | 2010/Young Gods 2010-08-14 Zofingen/01 Young Gods-Heitere 2010.flac | 0:31
+54 | 2010/Young Gods 2010-08-14 Zofingen/03 Young Gods-Heitere 2010.flac | 0:27
+55 | 2010/Young Gods 2010-08-14 Zofingen/05 Young Gods-Heitere 2010.flac | 0:35
+56 | 2010/Young Gods 2010-08-14 Zofingen/06 Young Gods-Heitere 2010.flac | 0:31
+57 | 2010/Young Gods 2010-08-14 Zofingen/08 Young Gods-Heitere 2010.flac | 0:25
+58 | 2010/Young Gods 2010-08-14 Zofingen/10 Young Gods-Heitere 2010.flac | 0:49
+59 | 2010/Young Gods 2010-09-19 Lausanne/younggods2010-09-19t02.flac | 0:27
+60 | 2010/Young Gods 2010-09-19 Lausanne/younggods2010-09-19t04.flac | 0:32
+61 | 2010/Young Gods 2010-09-19 Lausanne/younggods2010-09-19t05.flac | 0:30
+62 | 2010/Young Gods 2010-09-19 Lausanne/younggods2010-09-19t07.flac | 0:24
+63 | 2010/Young Gods 2010-09-19 Lausanne/younggods2010-09-19t09.flac | 0:32
+64 | 2010/Young Gods 2010-11-16 Lausanne/03-blooming.flac | 0:30
+65 | 2010/Young Gods 2010-11-16 Lausanne/05-supersonic.flac | 0:27
+66 | 2010/Young Gods 2010-11-16 Lausanne/07-mister sunshine.flac | 0:40
+67 | 2010/Young Gods 2010-11-16 Lausanne/08-tenter le grillage.flac | 0:40
+68 | 2010/Young Gods 2010-11-16 Lausanne/10-once again - encore.flac | 1:01
+69 | 2010/Young Gods 2010-11-16 Lausanne/12-kissing the sun.flac | 0:30
+70 | 2010/Young Gods 2010-08-14 Zofingen/02 Young Gods-Heitere 2010.flac | 0:39
+71 | 2010/Young Gods 2010-08-14 Zofingen/04 Young Gods-Heitere 2010.flac | 0:26
+72 | 2010/Young Gods 2010-08-14 Zofingen/07 Young Gods-Heitere 2010.flac | 0:24
+73 | 2010/Young Gods 2010-09-19 Lausanne/younggods2010-09-19t01.flac | 0:35
+74 | 2010/Young Gods 2010-09-19 Lausanne/younggods2010-09-19t06.flac | 1:14
+75 | 2010/Young Gods 2010-11-16 Lausanne/02-sirius business.flac | 0:03
+76 | 2010/Young Gods 2010-11-16 Lausanne/04-no land's man.flac | 0:33

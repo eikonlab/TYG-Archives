@@ -1,0 +1,76 @@
+01 | 1986/La Dolce Vita 10-4-1986.wav | 8:16
+02 | 1986/La Dolce Vita cont.wav | 5:27
+03 | 1986/Clarendon 26-4-1986.wav | 27:18
+04 | 1986/La Dolce Vita 10-4-1986.wav | 18:34
+05 | 1986/La Dolce Vita cont.wav | 12:15
+06 | 1986/Clarendon 26-4-1986.wav | 8:22
+07 | 1986/La Dolce Vita 10-4-1986.wav | 5:41
+08 | 1986/La Dolce Vita cont.wav | 3:45
+09 | 1986/Clarendon 26-4-1986.wav | 23:31
+10 | 1986/La Dolce Vita 10-4-1986.wav | 16:00
+11 | 1986/La Dolce Vita cont.wav | 10:33
+12 | 1986/Clarendon 26-4-1986.wav | 15:56
+13 | 1986/La Dolce Vita 10-4-1986.wav | 10:51
+14 | 1986/La Dolce Vita cont.wav | 7:09
+15 | 1986/Clarendon 26-4-1986.wav | 31:05
+16 | 1986/La Dolce Vita 10-4-1986.wav | 21:09
+17 | 1986/La Dolce Vita cont.wav | 13:57
+18 | 1986/Clarendon 26-4-1986.wav | 2:12
+19 | 1986/La Dolce Vita 10-4-1986.wav | 1:30
+20 | 1986/La Dolce Vita cont.wav | 0:59
+21 | 1986/Clarendon 26-4-1986.wav | 17:21
+22 | 1986/La Dolce Vita 10-4-1986.wav | 11:49
+23 | 1986/La Dolce Vita cont.wav | 7:47
+24 | 1986/Clarendon 26-4-1986.wav | 9:47
+25 | 1986/La Dolce Vita 10-4-1986.wav | 6:39
+26 | 1986/La Dolce Vita cont.wav | 4:23
+27 | 1986/Clarendon 26-4-1986.wav | 24:56
+28 | 1986/La Dolce Vita 10-4-1986.wav | 16:58
+29 | 1986/La Dolce Vita cont.wav | 11:11
+30 | 1986/Clarendon 26-4-1986.wav | 6:00
+31 | 1986/La Dolce Vita 10-4-1986.wav | 4:05
+32 | 1986/La Dolce Vita cont.wav | 2:41
+33 | 1986/Clarendon 26-4-1986.wav | 21:09
+34 | 1986/La Dolce Vita 10-4-1986.wav | 14:23
+35 | 1986/La Dolce Vita cont.wav | 9:29
+36 | 1986/Clarendon 26-4-1986.wav | 13:34
+37 | 1986/La Dolce Vita 10-4-1986.wav | 9:14
+38 | 1986/La Dolce Vita cont.wav | 6:05
+39 | 1986/Clarendon 26-4-1986.wav | 28:43
+40 | 1986/La Dolce Vita 10-4-1986.wav | 19:32
+41 | 1986/La Dolce Vita cont.wav | 12:53
+42 | 1986/Clarendon 26-4-1986.wav | 4:06
+43 | 1986/La Dolce Vita 10-4-1986.wav | 2:47
+44 | 1986/La Dolce Vita cont.wav | 1:50
+45 | 1986/Clarendon 26-4-1986.wav | 19:15
+46 | 1986/La Dolce Vita 10-4-1986.wav | 13:06
+47 | 1986/La Dolce Vita cont.wav | 8:38
+48 | 1986/Clarendon 26-4-1986.wav | 11:40
+49 | 1986/La Dolce Vita 10-4-1986.wav | 7:57
+50 | 1986/La Dolce Vita cont.wav | 5:14
+51 | 1986/Clarendon 26-4-1986.wav | 26:49
+52 | 1986/La Dolce Vita 10-4-1986.wav | 18:15
+53 | 1986/La Dolce Vita cont.wav | 12:02
+54 | 1986/Clarendon 26-4-1986.wav | 7:53
+55 | 1986/La Dolce Vita 10-4-1986.wav | 5:22
+56 | 1986/La Dolce Vita cont.wav | 3:32
+57 | 1986/Clarendon 26-4-1986.wav | 23:02
+58 | 1986/La Dolce Vita 10-4-1986.wav | 15:40
+59 | 1986/La Dolce Vita cont.wav | 10:20
+60 | 1986/Clarendon 26-4-1986.wav | 15:28
+61 | 1986/La Dolce Vita 10-4-1986.wav | 10:31
+62 | 1986/La Dolce Vita cont.wav | 6:56
+63 | 1986/Clarendon 26-4-1986.wav | 30:37
+64 | 1986/La Dolce Vita 10-4-1986.wav | 20:50
+65 | 1986/La Dolce Vita cont.wav | 13:44
+66 | 1986/Clarendon 26-4-1986.wav | 3:09
+67 | 1986/La Dolce Vita 10-4-1986.wav | 2:09
+68 | 1986/La Dolce Vita cont.wav | 1:25
+69 | 1986/Clarendon 26-4-1986.wav | 18:18
+70 | 1986/La Dolce Vita 10-4-1986.wav | 12:27
+71 | 1986/La Dolce Vita cont.wav | 8:13
+72 | 1986/Clarendon 26-4-1986.wav | 10:44
+73 | 1986/La Dolce Vita 10-4-1986.wav | 7:18
+74 | 1986/La Dolce Vita cont.wav | 4:49
+75 | 1986/Clarendon 26-4-1986.wav | 25:53
+76 | 1986/La Dolce Vita 10-4-1986.wav | 17:36

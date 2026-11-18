@@ -12,10 +12,15 @@ const IMG_DIR = fileURLToPath(new URL("src/img", import.meta.url));
 const WEB_DIR = fileURLToPath(new URL("src/img-web", import.meta.url));
 const PROJECT_DIR = fileURLToPath(new URL(".", import.meta.url));
 
-// v4 : src/img, src/img-web et src/audio/tyg ne sont PAS dans le projet, ce sont des
-// liens symboliques vers le disque externe (voir README.md, « Médias sur le disque externe »).
+// Lien src/audio/originaux → « 02 AUDIO » : les enregistrements où le sampler prend ses sons.
+const AUDIO_DIR = fileURLToPath(new URL("src/audio/originaux", import.meta.url));
+
+// v4 : src/img et src/audio/originaux ne sont PAS dans le projet, ce sont des liens
+// symboliques vers le disque externe (voir README.md, « Médias sur le disque externe ») :
+//   src/img             → TYG-ARCHIVE/00 TYG ARCHIVES by year
+//   src/audio/originaux → TYG-ARCHIVE/02 AUDIO
 // Disque débranché : le site démarre quand même, sans images ni sons du sampler.
-const DISK_MEDIA = "/Volumes/TYG-ARCHIVE/site-media";
+const DISK_MEDIA = "/Volumes/TYG-ARCHIVE";
 function diskReady() {
   if (fs.existsSync(IMG_DIR)) return true;
   console.warn(`\n  ⚠ Disque externe introuvable (${DISK_MEDIA}) : branche TYG-ARCHIVE puis relance.\n`);
@@ -60,7 +65,8 @@ function listMediaFiles(dir, prefix = "") {
   const files = [];
 
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
-    if (entry.name.startsWith(".")) continue;
+    // Fichiers cachés, et dossiers techniques du NAS Synology (@eaDir : ses vignettes, #recycle).
+    if (entry.name.startsWith(".") || entry.name.startsWith("@") || entry.name.startsWith("#")) continue;
     const relative = prefix + entry.name;
     const full = path.join(dir, entry.name);
 
@@ -85,6 +91,78 @@ function listMediaFiles(dir, prefix = "") {
   return files;
 }
 
+// Sert les fichiers du disque externe (src/img, src/img-web, src/audio/originaux).
+// Vite le fait mal pour les noms avec « ? », « & » ou « + » (il renvoie la page du site
+// à la place) : on les sert donc nous-mêmes, morceau par morceau si le navigateur le demande
+// (en-tête Range : vidéos, et passages de 10 s du sampler dans les longs enregistrements).
+const CONTENT_TYPES = {
+  jpg: "image/jpeg", jpeg: "image/jpeg", png: "image/png", gif: "image/gif", webp: "image/webp",
+  mp4: "video/mp4", m4v: "video/mp4", mov: "video/quicktime",
+  wav: "audio/wav", flac: "audio/flac", mp3: "audio/mpeg", m4a: "audio/mp4", aif: "audio/aiff", aiff: "audio/aiff",
+};
+function diskFiles(base) {
+  const roots = { "src/img/": IMG_DIR, "src/img-web/": WEB_DIR, "src/audio/originaux/": AUDIO_DIR };
+  return (req, res, next) => {
+    if (req.method !== "GET" && req.method !== "HEAD") return next();
+    let pathname = req.url.split("?")[0]; // les « ? » des noms arrivent encodés (%3F)
+    if (pathname.startsWith(base)) pathname = pathname.slice(base.length);
+    else if (pathname.startsWith("/")) pathname = pathname.slice(1);
+    const prefix = Object.keys(roots).find((p) => pathname.startsWith(p));
+    if (!prefix) return next();
+
+    let file;
+    try {
+      const parts = pathname.slice(prefix.length).split("/").map(decodeURIComponent);
+      if (parts.some((part) => part === ".." || part === "")) throw new Error("chemin invalide");
+      file = path.join(roots[prefix], ...parts);
+    } catch {
+      res.statusCode = 400;
+      return res.end();
+    }
+    let stat;
+    try {
+      stat = fs.statSync(file);
+      if (!stat.isFile()) throw new Error("pas un fichier");
+    } catch {
+      res.statusCode = 404;
+      return res.end("Introuvable");
+    }
+
+    const type = CONTENT_TYPES[file.split(".").pop().toLowerCase()] || "application/octet-stream";
+    res.setHeader("Content-Type", type);
+    res.setHeader("Accept-Ranges", "bytes");
+    res.setHeader("Cache-Control", "no-cache");
+    res.setHeader("Last-Modified", stat.mtime.toUTCString());
+
+    let start = 0;
+    let end = stat.size - 1;
+    const range = /^bytes=(\d*)-(\d*)$/.exec(req.headers.range || "");
+    if (range && (range[1] || range[2])) {
+      if (range[1]) {
+        start = Number(range[1]);
+        if (range[2]) end = Math.min(end, Number(range[2]));
+      } else {
+        start = Math.max(0, stat.size - Number(range[2])); // « bytes=-500 » : les 500 derniers octets
+      }
+      if (start > end) {
+        res.statusCode = 416;
+        res.setHeader("Content-Range", `bytes */${stat.size}`);
+        return res.end();
+      }
+      res.statusCode = 206;
+      res.setHeader("Content-Range", `bytes ${start}-${end}/${stat.size}`);
+    } else {
+      res.statusCode = 200;
+    }
+    res.setHeader("Content-Length", end - start + 1);
+    if (req.method === "HEAD") return res.end();
+    const stream = fs.createReadStream(file, { start, end });
+    stream.on("error", () => res.destroy());
+    req.on("close", () => stream.destroy());
+    stream.pipe(res);
+  };
+}
+
 // Petit plugin : `import FILES from "virtual:archive-files"` donne la liste
 // des fichiers de src/img. Contrairement à import.meta.glob, aucun fichier
 // n'est importé, donc les noms bizarres ("?", "#", guillemets…) ne posent pas problème.
@@ -101,6 +179,7 @@ function archiveFiles() {
       return `export default ${JSON.stringify(diskReady() ? listMediaFiles(IMG_DIR) : [])};`;
     },
     configureServer(server) {
+      server.middlewares.use(diskFiles(server.config.base));
       // Un fichier ajouté ou supprimé dans src/img : on refait la liste.
       const refresh = (file) => {
         if (!file.startsWith(IMG_DIR) && !file.startsWith(WEB_DIR)) return;
@@ -127,33 +206,18 @@ function copyMedia() {
     },
     closeBundle() {
       if (!diskReady()) return;
-      const media = path.join(outDir, "media");
-      // Seuls les originaux SANS copie légère sont copiés : le site n'utilise
-      // jamais l'original quand la copie WebP / MP4 existe (voir data/years.js).
-      const files = listMediaFiles(IMG_DIR).filter((file) => !file.web);
-      // Ancien dist/media (copies parfois verrouillées) : on déverrouille puis on vide.
-      if (fs.existsSync(media) && process.platform === "darwin") execFileSync("chflags", ["-R", "nouchg", media]);
-      fs.rmSync(media, { recursive: true, force: true });
-      fs.mkdirSync(media, { recursive: true, mode: 0o755 });
-      for (const { path: relative } of files) {
-        const target = path.join(media, relative);
-        fs.mkdirSync(path.dirname(target), { recursive: true, mode: 0o755 });
-        const source = path.join(IMG_DIR, relative);
-        // Les originaux sont sur le disque externe (exFAT) : pas de clone possible, copie normale.
-        fs.copyFileSync(source, target);
-      }
-      // Les originaux sont parfois verrouillés (Finder / Dropbox) : on enlève le verrou des copies.
-      if (process.platform === "darwin") execFileSync("chflags", ["-R", "nouchg", media]);
-      for (const { path: relative } of files) fs.chmodSync(path.join(media, relative), 0o644);
-      // Copies légères → dist/media-web/ : un lien vers le disque externe (16 Go qu'on
-      // ne recopie pas sur le Mac). Pour mettre le site en ligne, envoyer dist/ en
+      // L'archive pèse ~1,7 To : rien n'est copié sur le Mac. dist/media et dist/audio sont
+      // des liens vers le disque externe. Pour mettre le site en ligne, envoyer dist/ en
       // suivant les liens (ex. rsync -L) pour que les vrais fichiers partent.
-      if (fs.existsSync(WEB_DIR)) {
-        const web = path.join(outDir, "media-web");
-        fs.rmSync(web, { recursive: true, force: true });
-        fs.symlinkSync(fs.realpathSync(WEB_DIR), web);
+      const links = { media: IMG_DIR, audio: AUDIO_DIR };
+      if (fs.existsSync(WEB_DIR)) links["media-web"] = WEB_DIR;
+      for (const [name, source] of Object.entries(links)) {
+        const target = path.join(outDir, name);
+        if (fs.existsSync(target) && process.platform === "darwin") execFileSync("chflags", ["-R", "nouchg", target]);
+        fs.rmSync(target, { recursive: true, force: true });
+        if (fs.existsSync(source)) fs.symlinkSync(fs.realpathSync(source), target);
       }
-      console.log(`  ${files.length} originaux sans copie légère copiés dans ${path.relative(process.cwd(), media)}/`);
+      console.log(`  dist/media et dist/audio : liens vers le disque externe (${DISK_MEDIA})`);
     },
   };
 }
@@ -164,7 +228,7 @@ export default defineConfig(({ command }) => {
   const standaloneBuild = command === "build" && STANDALONE;
   return {
     plugins: [react(), archiveFiles(), ...(standaloneBuild ? [copyMedia()] : [])],
-    // Les sons du sampler (src/audio/tyg) sont servis depuis leur vrai emplacement,
+    // Photos, vidéos et sons sont servis depuis leur vrai emplacement,
     // sur le disque externe : Vite doit avoir le droit d'y lire.
     server: { fs: { allow: [PROJECT_DIR, DISK_MEDIA] } },
     ...(standaloneBuild && {
@@ -172,6 +236,7 @@ export default defineConfig(({ command }) => {
       define: {
         "import.meta.env.VITE_MEDIA_URL": JSON.stringify("./media/"),
         "import.meta.env.VITE_MEDIA_WEB_URL": JSON.stringify("./media-web/"),
+        "import.meta.env.VITE_AUDIO_URL": JSON.stringify("./audio/"),
       },
     }),
   };

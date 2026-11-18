@@ -26,7 +26,7 @@ src/
     Caption.jsx                légende sous la scène
     KeyStrip.jsx               bande des 17 touches (en bas)
     format.js                  petits outils de texte
-  img/                         l'archive : un dossier par année (1985/, 1986/…)
+  img/                         lien vers « 00 TYG ARCHIVES by year » (disque externe)
   data/
     years.js                   liste les fichiers de img/ et les range par année
   hooks/
@@ -61,23 +61,28 @@ Les fichiers sont servis directement depuis `src/img/` : utilise `npm run dev`
 
 ## Médias sur le disque externe (v4)
 
-Les gros dossiers ne sont pas dans le projet : ce sont des **liens symboliques**
-vers le disque externe **TYG-ARCHIVE** (dossier `site-media/`).
+Aucun média n'est dans le projet : ce sont des **liens symboliques** vers le disque
+externe **TYG-ARCHIVE**.
 
 ```
-src/img        →  /Volumes/TYG-ARCHIVE/site-media/img        photos et vidéos d'origine
-src/img-web    →  /Volumes/TYG-ARCHIVE/site-media/img-web    copies légères
-src/audio/tyg  →  /Volumes/TYG-ARCHIVE/site-media/tyg        extraits du sampler
+src/img              →  /Volumes/TYG-ARCHIVE/00 TYG ARCHIVES by year    photos et vidéos, par année
+src/audio/originaux  →  /Volumes/TYG-ARCHIVE/02 AUDIO                   enregistrements du sampler
 ```
 
-Aucun média n'est stocké sur le Mac. `site-media/audio/` garde aussi
-`skinflowers-debut.mp3` (ancien son, plus utilisé par le site).
-
+- Les photos et vidéos sont lues **en original** directement dans
+  « 00 TYG ARCHIVES by year » (pas de copies légères). Les dossiers techniques du
+  NAS (`@eaDir`, `#recycle`) sont ignorés.
+- Le sampler lit ses sons **directement dans les .wav / .flac de « 02 AUDIO »** :
+  seules les 10 secondes utiles sont téléchargées (voir `src/audio/decoupe.js`).
+  La liste des passages (n° | fichier dans 02 AUDIO | moment) est dans
+  `src/audio/extraits/<année>.txt` : c'est là qu'on change un son.
 - Brancher le disque **avant** de lancer le site. Disque absent : le site démarre
-  quand même, mais sans images ni sons du sampler (message dans le terminal).
-- Ne pas renommer le disque ni le dossier `site-media` (les liens s'arrêteraient).
-- Ajouter des photos : les mettre directement sur le disque, dans `site-media/img/<année>/`.
+  quand même, mais sans images ni sons (message dans le terminal).
+- Ne pas renommer le disque ni les dossiers « 00 TYG ARCHIVES by year » (attention,
+  son nom finit par une espace) et « 02 AUDIO » : les liens s'arrêteraient.
+- Ajouter des photos : les mettre sur le disque, dans `00 TYG ARCHIVES by year/<année>/`.
 - Refaire un lien (si besoin) :
-  `ln -s /Volumes/TYG-ARCHIVE/site-media/img src/img`
-- `npm run build` : `dist/media-web` est un lien vers le disque. Pour mettre en
-  ligne, envoyer `dist/` en suivant les liens (ex. `rsync -L`).
+  `ln -s "/Volumes/TYG-ARCHIVE/00 TYG ARCHIVES by year " src/img`
+  `ln -s "/Volumes/TYG-ARCHIVE/02 AUDIO" src/audio/originaux`
+- `npm run build` ne copie rien : `dist/media` et `dist/audio` sont des liens vers le
+  disque. Pour mettre en ligne, envoyer `dist/` en suivant les liens (ex. `rsync -L`).

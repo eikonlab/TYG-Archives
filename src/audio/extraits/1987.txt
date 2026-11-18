@@ -1,0 +1,76 @@
+01 | 1987/Amsterdam 30-10-87.wav | 22:38
+02 | 1987/Bremgarten 13-6-87.wav | 15:02
+03 | 1987/Frankfurt 1987.wav | 20:33
+04 | 1987/KOB Berlin 2.5.87.wav | 18:40
+05 | 1987/Malmo 22-5-87.wav | 21:03
+06 | 1987/Ravensburg 6-5-87.wav | 18:35
+07 | 1987/Sivry Belgium 26-9-87.wav | 19:28
+08 | 1987/Young Gods 1987-05-09 Fribourg/01. Nous de la Lune.flac | 2:56
+09 | 1987/Young Gods 1987-05-09 Fribourg/05. Percussionne.flac | 3:30
+10 | 1987/Young Gods 1987-05-09 Fribourg/08. Feu.flac | 1:38
+11 | 1987/Young Gods 1987-05-09 Fribourg/12. Jusqu'au bout.flac | 1:32
+12 | 1987/Young Gods 1987-06-05 Lyon/Flac/03 - Young Gods.flac | 1:15
+13 | 1987/Young Gods 1987-06-05 Lyon/Flac/07 - Young Gods.flac | 2:01
+14 | 1987/Young Gods 1987-09-29 Frankfurt/Young Gods 1987-09-29 Frankfurt-3.flac | 0:55
+15 | 1987/Young Gods 1987-11-09 Horst/02. Nou de la Lune.flac | 2:48
+16 | 1987/Young Gods 1987-11-09 Horst/06. Percussionne.flac | 2:30
+17 | 1987/Young Gods 1987-11-09 Horst/10. Did You Miss Me.flac | 1:47
+18 | 1987/Amsterdam 7-6-87.wav | 21:17
+19 | 1987/Bad Blue Fest Burgdorf 14-3-87.wav | 22:48
+20 | 1987/Biel 12-3-87.wav | 26:09
+21 | 1987/Constanz Roxy Club 6-10-87.wav | 22:47
+22 | 1987/Copenhagen Barbue 21-5-87.wav | 25:31
+23 | 1987/Enyoye 9-5-87.wav | 1:39
+24 | 1987/FriSon show 9-5-87.wav | 23:26
+25 | 1987/Futurama 31.10.87.wav | 14:57
+26 | 1987/Heidelberg Schwimbad 7-10-87.wav | 30:36
+27 | 1987/Koln Rose Club 14-5-87.wav | 22:08
+28 | 1987/Kortrijt BE 25-9-87.wav | 19:29
+29 | 1987/Leiden & Stuttgart 1987.wav | 27:58
+30 | 1987/Martigny 27-6-87.wav | 30:42
+31 | 1987/Munich board mix May 87.wav | 26:12
+32 | 1987/Neuchatel 26-6-87.wav | 16:55
+33 | 1987/Ravensburg Festival May 87.wav | 7:54
+34 | 1987/Rennes Les Trans 9.12.1987.wav | 22:49
+35 | 1987/Sarnen 4-7-87.wav | 25:31
+36 | 1987/U4 Vienna 18.3.87.wav | 21:18
+37 | 1987/Wilhelmshaven 5-5-87.wav | 25:13
+38 | 1987/Zeche Bochum 5-10-87.wav | 21:27
+39 | 1987/Young Gods 1987-05-09 Fribourg/02. Fais la Mouette.flac | 2:23
+40 | 1987/Young Gods 1987-05-09 Fribourg/03. The Irrtum Boys.flac | 1:21
+41 | 1987/Young Gods 1987-05-09 Fribourg/04. Jimmy.flac | 1:05
+42 | 1987/Young Gods 1987-05-09 Fribourg/06. Did you miss me.flac | 2:02
+43 | 1987/Young Gods 1987-05-09 Fribourg/07. Sing Sing Song.flac | 0:33
+44 | 1987/Young Gods 1987-05-09 Fribourg/09. A ciel ouvert.flac | 0:50
+45 | 1987/Young Gods 1987-05-09 Fribourg/10. Envoye.flac | 2:04
+46 | 1987/Young Gods 1987-05-09 Fribourg/11. Soul Idiot.flac | 2:47
+47 | 1987/Young Gods 1987-05-09 Fribourg/15. Radio Song.flac | 3:06
+48 | 1987/Young Gods 1987-06-05 Lyon/Flac/01 - Young Gods.flac | 2:48
+49 | 1987/Young Gods 1987-06-05 Lyon/Flac/02 - Young Gods.flac | 2:12
+50 | 1987/Young Gods 1987-06-05 Lyon/Flac/04 - Young Gods.flac | 1:04
+51 | 1987/Young Gods 1987-06-05 Lyon/Flac/05 - Young Gods.flac | 3:14
+52 | 1987/Young Gods 1987-06-05 Lyon/Flac/06 - Young Gods.flac | 1:45
+53 | 1987/Young Gods 1987-06-05 Lyon/Flac/08 - Young Gods.flac | 2:14
+54 | 1987/Young Gods 1987-09-29 Frankfurt/Young Gods 1987-09-29 Frankfurt-1.flac | 3:28
+55 | 1987/Young Gods 1987-09-29 Frankfurt/Young Gods 1987-09-29 Frankfurt-2.flac | 0:48
+56 | 1987/Young Gods 1987-09-29 Frankfurt/Young Gods 1987-09-29 Frankfurt-4.flac | 2:03
+57 | 1987/Young Gods 1987-09-29 Frankfurt/Young Gods 1987-09-29 Frankfurt-5.flac | 1:55
+58 | 1987/Young Gods 1987-11-09 Horst/01. Comme c'‚tait la derniere fois.flac | 2:24
+59 | 1987/Young Gods 1987-11-09 Horst/03. Jusqu'au bout.flac | 1:30
+60 | 1987/Young Gods 1987-11-09 Horst/04. Jimmy.flac | 3:57
+61 | 1987/Young Gods 1987-11-09 Horst/05. Soul Idiot.flac | 2:24
+62 | 1987/Young Gods 1987-11-09 Horst/07. A Ciel Ouvert.flac | 0:52
+63 | 1987/Young Gods 1987-11-09 Horst/08. Envoy‚.flac | 1:00
+64 | 1987/Young Gods 1987-11-09 Horst/09. Si Tu Gardes.flac | 4:11
+65 | 1987/Amsterdam 30-10-87.wav | 12:29
+66 | 1987/Bremgarten 13-6-87.wav | 8:17
+67 | 1987/Frankfurt 1987.wav | 11:20
+68 | 1987/KOB Berlin 2.5.87.wav | 10:18
+69 | 1987/Malmo 22-5-87.wav | 11:36
+70 | 1987/Ravensburg 6-5-87.wav | 10:15
+71 | 1987/Sivry Belgium 26-9-87.wav | 10:44
+72 | 1987/Young Gods 1987-05-09 Fribourg/01. Nous de la Lune.flac | 1:37
+73 | 1987/Young Gods 1987-05-09 Fribourg/05. Percussionne.flac | 1:56
+74 | 1987/Young Gods 1987-05-09 Fribourg/08. Feu.flac | 0:54
+75 | 1987/Young Gods 1987-05-09 Fribourg/12. Jusqu'au bout.flac | 0:50
+76 | 1987/Young Gods 1987-06-05 Lyon/Flac/03 - Young Gods.flac | 0:41

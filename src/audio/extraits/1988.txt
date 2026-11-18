@@ -1,0 +1,76 @@
+01 | 1988/Alborg 24-4-88.wav | 23:50
+02 | 1988/Encores Sundsvall & Katrineholm 1988.wav | 8:18
+03 | 1988/Helsinki 20-4-88.wav | 25:10
+04 | 1988/Lausanne Hot Point Festival 09.09.1988.wav | 25:45
+05 | 1988/Roskilde 2-7-88.wav | 24:15
+06 | 1988/Stuttgart 4-7-88.wav | 25:09
+07 | 1988/Young Gods 1988-09-03 Lausanne [source 1]/02. Fais la mouette.flac | 2:22
+08 | 1988/Young Gods 1988-09-03 Lausanne [source 1]/05. Pas mal.flac | 1:14
+09 | 1988/Young Gods 1988-09-03 Lausanne [source 1]/08. Did you miss me.flac | 2:02
+10 | 1988/Young Gods 1988-09-03 Lausanne [source 1]/Young Gods 1988-09-03 Lausanne [source 2]/02.flac | 1:15
+11 | 1988/Young Gods 1988-09-03 Lausanne [source 1]/Young Gods 1988-09-03 Lausanne [source 2]/05.flac | 2:35
+12 | 1988/Young Gods 1988-09-03 Lausanne [source 1]/Young Gods 1988-09-03 Lausanne [source 2]/08.flac | 1:41
+13 | 1988/Young Gods 1988-09-03 Lausanne [source 1]/Young Gods 1988-09-03 Lausanne [source 2]/10.flac | 1:58
+14 | 1988/Young Gods 1988-10-06 Vienna/Young Gods 1988-10-06 Vienna FM_track03.flac | 1:16
+15 | 1988/Young Gods 1988-10-06 Vienna/Young Gods 1988-10-06 Vienna FM_track06.flac | 1:14
+16 | 1988/Young Gods 1988-10-06 Vienna/Young Gods 1988-10-06 Vienna FM_track08.flac | 0:11
+17 | 1988/Young Gods 1988-10-06 Vienna/Young Gods 1988-10-06 Vienna FM_track11.flac | 0:09
+18 | 1988/Berlin Metropol Fest Oct 88.wav | 18:06
+19 | 1988/Copenhagen 15-4-88.wav | 24:10
+20 | 1988/Ghent 14.10.1988.wav | 27:42
+21 | 1988/Katrineholm 23-4-88.wav | 22:57
+22 | 1988/Kir Hamburg 30.6.88.wav | 28:29
+23 | 1988/London T&C 3.10.1988.wav | 25:35
+24 | 1988/Malmo (?) 16-4-88.wav | 23:00
+25 | 1988/Spectrum Montreal 21_6_1988.wav | 28:07
+26 | 1988/Tampere 19-4-88.wav | 22:55
+27 | 1988/Young Gods 1988-09-03 Lausanne [source 1]/01. Fille de la mort.flac | 4:19
+28 | 1988/Young Gods 1988-09-03 Lausanne [source 1]/03. The Irrtum Boys.flac | 1:18
+29 | 1988/Young Gods 1988-09-03 Lausanne [source 1]/04. Jimmy.flac | 1:21
+30 | 1988/Young Gods 1988-09-03 Lausanne [source 1]/06. Feu.flac | 1:38
+31 | 1988/Young Gods 1988-09-03 Lausanne [source 1]/07. L'amourir.flac | 2:43
+32 | 1988/Young Gods 1988-09-03 Lausanne [source 1]/Young Gods 1988-09-03 Lausanne [source 2]/01.flac | 2:41
+33 | 1988/Young Gods 1988-09-03 Lausanne [source 1]/Young Gods 1988-09-03 Lausanne [source 2]/03.flac | 1:39
+34 | 1988/Young Gods 1988-09-03 Lausanne [source 1]/Young Gods 1988-09-03 Lausanne [source 2]/04.flac | 4:08
+35 | 1988/Young Gods 1988-09-03 Lausanne [source 1]/Young Gods 1988-09-03 Lausanne [source 2]/06.flac | 0:52
+36 | 1988/Young Gods 1988-09-03 Lausanne [source 1]/Young Gods 1988-09-03 Lausanne [source 2]/07.flac | 1:21
+37 | 1988/Young Gods 1988-09-03 Lausanne [source 1]/Young Gods 1988-09-03 Lausanne [source 2]/09.flac | 2:23
+38 | 1988/Young Gods 1988-10-06 Vienna/Young Gods 1988-10-06 Vienna FM_track01.flac | 2:25
+39 | 1988/Young Gods 1988-10-06 Vienna/Young Gods 1988-10-06 Vienna FM_track02.flac | 4:21
+40 | 1988/Young Gods 1988-10-06 Vienna/Young Gods 1988-10-06 Vienna FM_track04.flac | 1:16
+41 | 1988/Young Gods 1988-10-06 Vienna/Young Gods 1988-10-06 Vienna FM_track05.flac | 2:27
+42 | 1988/Young Gods 1988-10-06 Vienna/Young Gods 1988-10-06 Vienna FM_track07.flac | 2:11
+43 | 1988/Young Gods 1988-10-06 Vienna/Young Gods 1988-10-06 Vienna FM_track09.flac | 1:51
+44 | 1988/Young Gods 1988-10-06 Vienna/Young Gods 1988-10-06 Vienna FM_track10.flac | 2:00
+45 | 1988/Alborg 24-4-88.wav | 13:08
+46 | 1988/Encores Sundsvall & Katrineholm 1988.wav | 4:35
+47 | 1988/Helsinki 20-4-88.wav | 13:52
+48 | 1988/Lausanne Hot Point Festival 09.09.1988.wav | 14:12
+49 | 1988/Roskilde 2-7-88.wav | 13:22
+50 | 1988/Stuttgart 4-7-88.wav | 13:52
+51 | 1988/Young Gods 1988-09-03 Lausanne [source 1]/02. Fais la mouette.flac | 1:18
+52 | 1988/Young Gods 1988-09-03 Lausanne [source 1]/05. Pas mal.flac | 0:40
+53 | 1988/Young Gods 1988-09-03 Lausanne [source 1]/08. Did you miss me.flac | 1:07
+54 | 1988/Young Gods 1988-09-03 Lausanne [source 1]/Young Gods 1988-09-03 Lausanne [source 2]/02.flac | 0:41
+55 | 1988/Young Gods 1988-09-03 Lausanne [source 1]/Young Gods 1988-09-03 Lausanne [source 2]/05.flac | 1:25
+56 | 1988/Young Gods 1988-09-03 Lausanne [source 1]/Young Gods 1988-09-03 Lausanne [source 2]/08.flac | 0:55
+57 | 1988/Young Gods 1988-09-03 Lausanne [source 1]/Young Gods 1988-09-03 Lausanne [source 2]/10.flac | 1:05
+58 | 1988/Young Gods 1988-10-06 Vienna/Young Gods 1988-10-06 Vienna FM_track03.flac | 0:42
+59 | 1988/Young Gods 1988-10-06 Vienna/Young Gods 1988-10-06 Vienna FM_track06.flac | 0:40
+60 | 1988/Berlin Metropol Fest Oct 88.wav | 9:59
+61 | 1988/Copenhagen 15-4-88.wav | 13:19
+62 | 1988/Ghent 14.10.1988.wav | 15:16
+63 | 1988/Katrineholm 23-4-88.wav | 12:39
+64 | 1988/Kir Hamburg 30.6.88.wav | 15:42
+65 | 1988/London T&C 3.10.1988.wav | 14:06
+66 | 1988/Malmo (?) 16-4-88.wav | 12:41
+67 | 1988/Spectrum Montreal 21_6_1988.wav | 15:30
+68 | 1988/Tampere 19-4-88.wav | 12:38
+69 | 1988/Young Gods 1988-09-03 Lausanne [source 1]/01. Fille de la mort.flac | 2:23
+70 | 1988/Young Gods 1988-09-03 Lausanne [source 1]/03. The Irrtum Boys.flac | 0:43
+71 | 1988/Young Gods 1988-09-03 Lausanne [source 1]/04. Jimmy.flac | 0:44
+72 | 1988/Young Gods 1988-09-03 Lausanne [source 1]/06. Feu.flac | 0:54
+73 | 1988/Young Gods 1988-09-03 Lausanne [source 1]/07. L'amourir.flac | 1:30
+74 | 1988/Young Gods 1988-09-03 Lausanne [source 1]/Young Gods 1988-09-03 Lausanne [source 2]/01.flac | 1:28
+75 | 1988/Young Gods 1988-09-03 Lausanne [source 1]/Young Gods 1988-09-03 Lausanne [source 2]/03.flac | 0:55
+76 | 1988/Young Gods 1988-09-03 Lausanne [source 1]/Young Gods 1988-09-03 Lausanne [source 2]/04.flac | 2:16

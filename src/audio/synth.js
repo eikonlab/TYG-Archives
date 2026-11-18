@@ -10,13 +10,15 @@
  *   getSamplerStatus()       → ce qui sonne en ce moment (pour l'affichage, voir SamplerHud.jsx)
  * Utilisé par : hooks/useKeyboard.js, hooks/useMidi.js, App.jsx (volume, année).
  *
- * Les extraits sont dans audio/tyg/<année>/ (01.m4a … 76.m4a) : 10 secondes
- * prises uniquement dans les enregistrements de « 02 AUDIO ». Chaque année
- * (1985 → 2026 + sans-date) a 76 extraits, un par touche du clavier MIDI,
- * et aucun passage n'est utilisé deux fois. Chaque dossier a son sources.txt
- * (n° | fichier | moment dans le fichier). Seuls les extraits enregistrés
- * l'année du dossier sont joués : une année sans enregistrement reste muette,
- * et une année qui a moins de 76 extraits à elle les répète sur le clavier.
+ * Les extraits sont lus DIRECTEMENT dans les enregistrements d'origine de
+ * « 02 AUDIO » sur le disque externe (lien src/audio/originaux) : aucun son n'est
+ * copié. La liste des passages est dans audio/extraits/<année>.txt
+ * (n° | fichier dans 02 AUDIO | moment dans le fichier) : 10 secondes par passage.
+ * Seul ce morceau du fichier est téléchargé (voir decoupe.js), pas le fichier entier.
+ * Chaque année (1985 → 2026 + sans-date) a jusqu'à 76 passages, un par touche du
+ * clavier MIDI. Seuls les passages enregistrés l'année du dossier sont joués : une
+ * année sans enregistrement reste muette, et une année qui a moins de 76 passages
+ * à elle les répète sur le clavier.
  *
  * Touches : la note la plus grave du clavier MIDI (FIRST_MIDI_NOTE) = extrait 01,
  * la suivante = 02, … jusqu'à 76. Le clavier de l'ordinateur joue les mêmes
@@ -26,6 +28,7 @@
  */
 
 import { FIRST_MIDI_NOTE } from "../constants.js";
+import { cutClip } from "./decoupe.js";
 
 // Réglages du son
 const VOLUME = 0.8;
@@ -37,38 +40,44 @@ const KEYBOARD_KEYS = 17;  // touches a … ; (préchargées en premier à chaqu
 const CACHE_MAX = 100;     // nombre d'extraits décodés gardés en mémoire (~3,5 Mo chacun) :
                            // les 76 de l'année affichée + quelques-uns de l'année d'avant
 
-// Extraits rangés par année : { "1987": [url 01, url 02, …], … }
-// On ne garde que les extraits enregistrés CETTE année-là (d'après sources.txt) :
-// un extrait de 1990 rangé dans tyg/1991/ est ignoré. Une année sans enregistrement
-// n'a donc pas de son, et ses touches restent muettes.
-const CLIPS = {};
-const CLIP_NUMBER = new Map(); // url → n° de l'extrait dans son dossier (pour l'affichage)
-const files = import.meta.glob("./tyg/*/*.m4a", { eager: true, query: "?url", import: "default" });
-const sources = import.meta.glob("./tyg/*/sources.txt", { eager: true, query: "?raw", import: "default" });
+const CLIP_LENGTH = 10; // secondes jouées à partir du moment indiqué dans extraits/<année>.txt
 
-// "01 | 1990/Glasgow….wav | 42:06" → { "01": "1990", … }
-function sourceYears(folder) {
-  const years = {};
-  for (const line of (sources[`./tyg/${folder}/sources.txt`] || "").split("\n")) {
-    const [number, file] = line.split("|").map((part) => part.trim());
-    if (number && file) years[number] = file.split("/")[0];
-  }
-  return years;
+// Adresse des enregistrements de « 02 AUDIO » (lien src/audio/originaux vers le disque externe).
+const AUDIO_BASE =
+  import.meta.env.VITE_AUDIO_URL ??
+  (import.meta.env.DEV ? import.meta.env.BASE_URL + "src/audio/originaux/" : "../audio/");
+
+// Passages rangés par année : { "1987": [{ id, number, url, start }, …], … }
+// On ne garde que les passages enregistrés CETTE année-là : un enregistrement de
+// 1990 listé dans 1991.txt est ignoré. Une année sans enregistrement n'a donc pas
+// de son, et ses touches restent muettes.
+const CLIPS = {};
+const lists = import.meta.glob("./extraits/*.txt", { eager: true, query: "?raw", import: "default" });
+
+// "8:16" ou "1:02:03" → secondes
+function seconds(text) {
+  return text.split(":").reduce((total, part) => total * 60 + Number(part), 0);
 }
 
-const yearsByFolder = {};
-for (const path of Object.keys(files).sort()) {
-  const folder = path.split("/")[2];
-  const number = path.split("/")[3].replace(".m4a", "");
-  const recorded = (yearsByFolder[folder] ||= sourceYears(folder))[number];
-  const sameYear = folder === "sans-date" ? recorded === "no date" : recorded === folder;
-  if (!sameYear) continue;
-  (CLIPS[folder] ||= []).push(files[path]);
-  CLIP_NUMBER.set(files[path], Number(number));
+for (const path of Object.keys(lists).sort()) {
+  const folder = path.split("/").pop().replace(".txt", "");
+  for (const line of lists[path].split("\n")) {
+    const [number, file, time] = line.split("|").map((part) => part.trim());
+    if (!number || !file || !time) continue;
+    const recorded = file.split("/")[0];
+    const sameYear = folder === "sans-date" ? recorded === "no date" : recorded === folder;
+    if (!sameYear) continue;
+    (CLIPS[folder] ||= []).push({
+      id: `${folder}/${number}`,
+      number: Number(number),
+      url: AUDIO_BASE + file.split("/").map(encodeURIComponent).join("/"),
+      start: seconds(time),
+    });
+  }
 }
 const CLIP_YEARS = Object.keys(CLIPS);
 
-// Cache : url → promesse du son décodé (chargé seulement quand on en a besoin).
+// Cache : passage → promesse du son décodé (chargé seulement quand on en a besoin).
 // Les plus anciens sont oubliés au-delà de CACHE_MAX pour ne pas saturer la mémoire.
 const buffers = new Map();
 let currentYear = CLIP_YEARS[CLIP_YEARS.length - 1];
@@ -81,26 +90,26 @@ function clipYearFor(name) {
   return null;
 }
 
-function loadClip(url) {
-  let clip = buffers.get(url);
+function loadClip(item) {
+  let clip = buffers.get(item.id);
   if (clip) {
-    buffers.delete(url); // remis en dernier = utilisé récemment
+    buffers.delete(item.id); // remis en dernier = utilisé récemment
   } else {
-    const ac = getContext();
-    clip = fetch(url)
-      .then((response) => response.arrayBuffer())
-      .then((data) => ac.decodeAudioData(data))
-      .catch(() => null);
+    clip = cutClip(getContext(), item.url, item.start, CLIP_LENGTH).catch((error) => {
+      console.warn(`Son introuvable : ${decodeURIComponent(item.url)} à ${item.start} s`, error);
+      buffers.delete(item.id); // réessayé la prochaine fois
+      return null;
+    });
   }
-  buffers.set(url, clip);
+  buffers.set(item.id, clip);
   while (buffers.size > CACHE_MAX) buffers.delete(buffers.keys().next().value);
   return clip;
 }
 
-// Extrait d'une note dans la série de l'année.
-function clipUrl(urls, note) {
-  const n = urls.length;
-  return urls[(((note - FIRST_MIDI_NOTE) % n) + n) % n];
+// Passage d'une note dans la série de l'année.
+function clipFor(clips, note) {
+  const n = clips.length;
+  return clips[(((note - FIRST_MIDI_NOTE) % n) + n) % n];
 }
 
 // Appelé par App.jsx quand l'année change (et à l'ouverture de la page) :
@@ -111,19 +120,19 @@ function clipUrl(urls, note) {
 let preloadRun = 0;
 export function setSamplerYear(name) {
   currentYear = clipYearFor(String(name));
-  const urls = CLIPS[currentYear];
-  if (!urls) return;
+  const clips = CLIPS[currentYear];
+  if (!clips) return;
   getContext(); // le décodage marche même si le son est encore bloqué par le navigateur
 
   const first = [];
-  for (let i = 0; i < KEYBOARD_KEYS; i++) first.push(clipUrl(urls, KEYBOARD_NOTE + i));
-  const order = [...new Set([...first, ...urls])];
+  for (let i = 0; i < KEYBOARD_KEYS; i++) first.push(clipFor(clips, KEYBOARD_NOTE + i));
+  const order = [...new Set([...first, ...clips])];
 
   const run = ++preloadRun;
   (async () => {
-    for (const url of order) {
+    for (const clip of order) {
       if (run !== preloadRun) return;
-      await loadClip(url);
+      await loadClip(clip);
     }
   })();
 }
@@ -161,8 +170,8 @@ export function setSynthVolume(value) {
 }
 
 export function synthNoteOn(note, force = 0.8) {
-  const urls = CLIPS[currentYear];
-  if (!urls || urls.length === 0) return;
+  const clips = CLIPS[currentYear];
+  if (!clips || clips.length === 0) return;
   const ac = getContext();
   synthNoteOff(note); // si l'extrait sonnait encore, on le relâche d'abord
 
@@ -171,10 +180,10 @@ export function synthNoteOn(note, force = 0.8) {
   const voice = { amp, source: null };
   voices.set(note, voice);
 
-  const url = clipUrl(urls, note);
+  const clip = clipFor(clips, note);
   const info = {
     note,
-    clip: CLIP_NUMBER.get(url),
+    clip: clip.number,
     year: currentYear,
     status: "loading",
     startedAt: 0,
@@ -207,7 +216,7 @@ export function synthNoteOn(note, force = 0.8) {
   };
 
   // L'extrait n'est peut-être pas encore décodé : on attend qu'il le soit.
-  loadClip(url).then(start);
+  loadClip(clip).then(start);
 }
 
 export function synthNoteOff(note) {
