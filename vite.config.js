@@ -4,6 +4,7 @@ import { fileURLToPath } from "node:url";
 import { execFileSync } from "node:child_process";
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import { buildExtraits } from "./scripts/extraits-auto.mjs";
 
 // Chemin calculé depuis ce fichier (et non depuis le dossier courant) :
 // le serveur commun (../serveur.mjs) lance v1 et v2 depuis le dossier prez/.
@@ -12,18 +13,18 @@ const IMG_DIR = fileURLToPath(new URL("src/img", import.meta.url));
 const WEB_DIR = fileURLToPath(new URL("src/img-web", import.meta.url));
 const PROJECT_DIR = fileURLToPath(new URL(".", import.meta.url));
 
-// Lien src/audio/originaux → « 02 AUDIO » : les enregistrements où le sampler prend ses sons.
+// Lien src/audio/originaux → all-years (dossiers <année>/AUDIO) : les enregistrements où le sampler prend ses sons.
 const AUDIO_DIR = fileURLToPath(new URL("src/audio/originaux", import.meta.url));
 
 // v4 : src/img et src/audio/originaux ne sont PAS dans le projet, ce sont des liens
 // symboliques vers le disque externe (voir README.md, « Médias sur le disque externe ») :
-//   src/img             → TYG-ARCHIVE/00 TYG ARCHIVES by year
-//   src/audio/originaux → TYG-ARCHIVE/02 AUDIO
+//   src/img             → TYG-eikon/all-years   (<année>/IMG et <année>/VIDEO)
+//   src/audio/originaux → TYG-eikon/all-years   (<année>/AUDIO)
 // Disque débranché : le site démarre quand même, sans images ni sons du sampler.
-const DISK_MEDIA = "/Volumes/TYG-ARCHIVE";
+const DISK_MEDIA = "/Volumes/TYG-eikon";
 function diskReady() {
   if (fs.existsSync(IMG_DIR)) return true;
-  console.warn(`\n  ⚠ Disque externe introuvable (${DISK_MEDIA}) : branche TYG-ARCHIVE puis relance.\n`);
+  console.warn(`\n  ⚠ Disque externe introuvable (${DISK_MEDIA}) : branche TYG-eikon puis relance.\n`);
   return false;
 }
 
@@ -180,8 +181,21 @@ function archiveFiles() {
     },
     configureServer(server) {
       server.middlewares.use(diskFiles(server.config.base));
+      // Sons du sampler : listes src/audio/extraits/<année>.txt refaites au démarrage
+      // à partir des dossiers <année>/AUDIO, puis à chaque son ajouté ou supprimé.
+      if (diskReady()) buildExtraits();
+      let soundTimer = null;
+      const refreshSounds = (file) => {
+        if (!/\/AUDIO\/[^/]*\.(wav|flac)$/i.test(file) || path.basename(file).startsWith(".")) return;
+        clearTimeout(soundTimer); // plusieurs fichiers copiés d'un coup : une seule mise à jour
+        soundTimer = setTimeout(() => {
+          buildExtraits();
+          console.log("  sons du sampler mis à jour (src/audio/extraits)");
+        }, 1500);
+      };
       // Un fichier ajouté ou supprimé dans src/img : on refait la liste.
       const refresh = (file) => {
+        refreshSounds(file);
         if (!file.startsWith(IMG_DIR) && !file.startsWith(WEB_DIR)) return;
         const module = server.moduleGraph.getModuleById(resolvedId);
         if (module) server.moduleGraph.invalidateModule(module);

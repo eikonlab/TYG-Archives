@@ -1,76 +1,76 @@
-01 | 1989/Glasgow Oct 1989.wav | 33:51
-02 | 1989/Young Gods 1989-11-17 Munich/02-Young Gods-L'Amourir.flac | 2:18
-03 | 1989/Young Gods 1989-11-17 Munich/03-Young Gods-Charlotte.flac | 1:01
-04 | 1989/Young Gods 1989-11-17 Munich/05-Young Gods-September Song.flac | 2:02
-05 | 1989/Young Gods 1989-11-17 Munich/06-Young Gods-Pas Mal.flac | 1:10
-06 | 1989/Young Gods 1989-12-06 Lyon/Flac/02 - YoungGods.flac | 2:16
-07 | 1989/Young Gods 1989-12-06 Lyon/Flac/03 - YoungGods.flac | 1:19
-08 | 1989/Young Gods 1989-12-06 Lyon/Flac/05 - YoungGods.flac | 1:44
-09 | 1989/Young Gods 1989-12-06 Lyon/Flac/06 - YoungGods.flac | 3:35
-10 | 1989/Young Gods 1989-12-06 Lyon/Flac/08 - YoungGods.flac | 1:48
-11 | 1989/Young Gods 1989-12-06 Lyon/Flac/10 - YoungGods.flac | 1:17
-12 | 1989/Young Gods 1989-12-06 Lyon/Flac/11 - YoungGods.flac | 1:23
-13 | 1989/Young Gods 1989-12-06 Lyon/Flac/13 - YoungGods.flac | 2:36
-14 | 1989/Young Gods 1989-12-06 Lyon/Flac/14 - YoungGods.flac | 1:51
-15 | 1989/Young Gods 1989-12-06 Lyon/Flac/16 - YoungGods.flac | 1:08
-16 | 1989/Young Gods 1989-12-06 Lyon/Flac/17 - YoungGods.flac | 1:53
-17 | 1989/Young Gods 1989-12-06 Lyon/Flac/19 - YoungGods.flac | 3:19
-18 | 1989/Young Gods 1989-11-17 Munich/01-Young Gods-La Fille De La Mort.flac | 3:16
-19 | 1989/Young Gods 1989-11-17 Munich/04-Young Gods-Seeraeuber Jenny.flac | 2:56
-20 | 1989/Young Gods 1989-12-06 Lyon/Flac/01 - YoungGods.flac | 1:52
-21 | 1989/Young Gods 1989-12-06 Lyon/Flac/04 - YoungGods.flac | 1:18
-22 | 1989/Young Gods 1989-12-06 Lyon/Flac/07 - YoungGods.flac | 1:40
-23 | 1989/Young Gods 1989-12-06 Lyon/Flac/09 - YoungGods.flac | 1:50
-24 | 1989/Young Gods 1989-12-06 Lyon/Flac/12 - YoungGods.flac | 2:17
-25 | 1989/Young Gods 1989-12-06 Lyon/Flac/15 - YoungGods.flac | 2:10
-26 | 1989/Young Gods 1989-12-06 Lyon/Flac/18 - YoungGods.flac | 2:24
-27 | 1989/Glasgow Oct 1989.wav | 18:40
-28 | 1989/Young Gods 1989-11-17 Munich/02-Young Gods-L'Amourir.flac | 1:16
-29 | 1989/Young Gods 1989-11-17 Munich/03-Young Gods-Charlotte.flac | 0:33
-30 | 1989/Young Gods 1989-11-17 Munich/05-Young Gods-September Song.flac | 1:07
-31 | 1989/Young Gods 1989-11-17 Munich/06-Young Gods-Pas Mal.flac | 0:38
-32 | 1989/Young Gods 1989-12-06 Lyon/Flac/02 - YoungGods.flac | 1:15
-33 | 1989/Young Gods 1989-12-06 Lyon/Flac/03 - YoungGods.flac | 0:43
-34 | 1989/Young Gods 1989-12-06 Lyon/Flac/05 - YoungGods.flac | 0:57
-35 | 1989/Young Gods 1989-12-06 Lyon/Flac/06 - YoungGods.flac | 1:58
-36 | 1989/Young Gods 1989-12-06 Lyon/Flac/08 - YoungGods.flac | 1:00
-37 | 1989/Young Gods 1989-12-06 Lyon/Flac/10 - YoungGods.flac | 0:42
-38 | 1989/Young Gods 1989-12-06 Lyon/Flac/11 - YoungGods.flac | 0:45
-39 | 1989/Young Gods 1989-12-06 Lyon/Flac/13 - YoungGods.flac | 1:26
-40 | 1989/Young Gods 1989-12-06 Lyon/Flac/14 - YoungGods.flac | 1:01
-41 | 1989/Young Gods 1989-12-06 Lyon/Flac/16 - YoungGods.flac | 0:37
-42 | 1989/Young Gods 1989-12-06 Lyon/Flac/17 - YoungGods.flac | 1:02
-43 | 1989/Young Gods 1989-12-06 Lyon/Flac/19 - YoungGods.flac | 1:50
-44 | 1989/Young Gods 1989-11-17 Munich/01-Young Gods-La Fille De La Mort.flac | 1:48
-45 | 1989/Young Gods 1989-11-17 Munich/04-Young Gods-Seeraeuber Jenny.flac | 1:37
-46 | 1989/Young Gods 1989-12-06 Lyon/Flac/01 - YoungGods.flac | 1:02
-47 | 1989/Young Gods 1989-12-06 Lyon/Flac/04 - YoungGods.flac | 0:43
-48 | 1989/Young Gods 1989-12-06 Lyon/Flac/07 - YoungGods.flac | 0:55
-49 | 1989/Young Gods 1989-12-06 Lyon/Flac/09 - YoungGods.flac | 1:01
-50 | 1989/Young Gods 1989-12-06 Lyon/Flac/12 - YoungGods.flac | 1:16
-51 | 1989/Young Gods 1989-12-06 Lyon/Flac/15 - YoungGods.flac | 1:11
-52 | 1989/Young Gods 1989-12-06 Lyon/Flac/18 - YoungGods.flac | 1:19
-53 | 1989/Glasgow Oct 1989.wav | 49:02
-54 | 1989/Young Gods 1989-11-17 Munich/02-Young Gods-L'Amourir.flac | 3:21
-55 | 1989/Young Gods 1989-11-17 Munich/03-Young Gods-Charlotte.flac | 1:28
-56 | 1989/Young Gods 1989-11-17 Munich/05-Young Gods-September Song.flac | 2:57
-57 | 1989/Young Gods 1989-11-17 Munich/06-Young Gods-Pas Mal.flac | 1:42
-58 | 1989/Young Gods 1989-12-06 Lyon/Flac/02 - YoungGods.flac | 3:17
-59 | 1989/Young Gods 1989-12-06 Lyon/Flac/03 - YoungGods.flac | 1:54
-60 | 1989/Young Gods 1989-12-06 Lyon/Flac/05 - YoungGods.flac | 2:31
-61 | 1989/Young Gods 1989-12-06 Lyon/Flac/06 - YoungGods.flac | 5:12
-62 | 1989/Young Gods 1989-12-06 Lyon/Flac/08 - YoungGods.flac | 2:37
-63 | 1989/Young Gods 1989-12-06 Lyon/Flac/10 - YoungGods.flac | 1:52
-64 | 1989/Young Gods 1989-12-06 Lyon/Flac/11 - YoungGods.flac | 2:00
-65 | 1989/Young Gods 1989-12-06 Lyon/Flac/13 - YoungGods.flac | 3:47
-66 | 1989/Young Gods 1989-12-06 Lyon/Flac/14 - YoungGods.flac | 2:41
-67 | 1989/Young Gods 1989-12-06 Lyon/Flac/16 - YoungGods.flac | 1:39
-68 | 1989/Young Gods 1989-12-06 Lyon/Flac/17 - YoungGods.flac | 2:44
-69 | 1989/Young Gods 1989-12-06 Lyon/Flac/19 - YoungGods.flac | 4:49
-70 | 1989/Young Gods 1989-11-17 Munich/01-Young Gods-La Fille De La Mort.flac | 4:44
-71 | 1989/Young Gods 1989-11-17 Munich/04-Young Gods-Seeraeuber Jenny.flac | 4:15
-72 | 1989/Young Gods 1989-12-06 Lyon/Flac/01 - YoungGods.flac | 2:43
-73 | 1989/Young Gods 1989-12-06 Lyon/Flac/04 - YoungGods.flac | 1:53
-74 | 1989/Young Gods 1989-12-06 Lyon/Flac/07 - YoungGods.flac | 2:24
-75 | 1989/Young Gods 1989-12-06 Lyon/Flac/09 - YoungGods.flac | 2:40
-76 | 1989/Young Gods 1989-12-06 Lyon/Flac/12 - YoungGods.flac | 3:19
+01 | 1989/AUDIO/Glasgow Oct 1989.wav | 33:51
+02 | 1989/AUDIO/02-Young Gods-L'Amourir.flac | 2:18
+03 | 1989/AUDIO/03-Young Gods-Charlotte.flac | 1:01
+04 | 1989/AUDIO/05-Young Gods-September Song.flac | 2:02
+05 | 1989/AUDIO/06-Young Gods-Pas Mal.flac | 1:10
+06 | 1989/AUDIO/02 - YoungGods.flac | 2:16
+07 | 1989/AUDIO/03 - YoungGods.flac | 1:19
+08 | 1989/AUDIO/05 - YoungGods.flac | 1:44
+09 | 1989/AUDIO/06 - YoungGods.flac | 3:35
+10 | 1989/AUDIO/08 - YoungGods.flac | 1:48
+11 | 1989/AUDIO/10 - YoungGods.flac | 1:17
+12 | 1989/AUDIO/11 - YoungGods.flac | 1:23
+13 | 1989/AUDIO/13 - YoungGods.flac | 2:36
+14 | 1989/AUDIO/14 - YoungGods.flac | 1:51
+15 | 1989/AUDIO/16 - YoungGods.flac | 1:08
+16 | 1989/AUDIO/17 - YoungGods.flac | 1:53
+17 | 1989/AUDIO/19 - YoungGods.flac | 3:19
+18 | 1989/AUDIO/01-Young Gods-La Fille De La Mort.flac | 3:16
+19 | 1989/AUDIO/04-Young Gods-Seeraeuber Jenny.flac | 2:56
+20 | 1989/AUDIO/01 - YoungGods.flac | 1:52
+21 | 1989/AUDIO/04 - YoungGods.flac | 1:18
+22 | 1989/AUDIO/07 - YoungGods.flac | 1:40
+23 | 1989/AUDIO/09 - YoungGods.flac | 1:50
+24 | 1989/AUDIO/12 - YoungGods.flac | 2:17
+25 | 1989/AUDIO/15 - YoungGods.flac | 2:10
+26 | 1989/AUDIO/18 - YoungGods.flac | 2:24
+27 | 1989/AUDIO/Glasgow Oct 1989.wav | 18:40
+28 | 1989/AUDIO/02-Young Gods-L'Amourir.flac | 1:16
+29 | 1989/AUDIO/03-Young Gods-Charlotte.flac | 0:33
+30 | 1989/AUDIO/05-Young Gods-September Song.flac | 1:07
+31 | 1989/AUDIO/06-Young Gods-Pas Mal.flac | 0:38
+32 | 1989/AUDIO/02 - YoungGods.flac | 1:15
+33 | 1989/AUDIO/03 - YoungGods.flac | 0:43
+34 | 1989/AUDIO/05 - YoungGods.flac | 0:57
+35 | 1989/AUDIO/06 - YoungGods.flac | 1:58
+36 | 1989/AUDIO/08 - YoungGods.flac | 1:00
+37 | 1989/AUDIO/10 - YoungGods.flac | 0:42
+38 | 1989/AUDIO/11 - YoungGods.flac | 0:45
+39 | 1989/AUDIO/13 - YoungGods.flac | 1:26
+40 | 1989/AUDIO/14 - YoungGods.flac | 1:01
+41 | 1989/AUDIO/16 - YoungGods.flac | 0:37
+42 | 1989/AUDIO/17 - YoungGods.flac | 1:02
+43 | 1989/AUDIO/19 - YoungGods.flac | 1:50
+44 | 1989/AUDIO/01-Young Gods-La Fille De La Mort.flac | 1:48
+45 | 1989/AUDIO/04-Young Gods-Seeraeuber Jenny.flac | 1:37
+46 | 1989/AUDIO/01 - YoungGods.flac | 1:02
+47 | 1989/AUDIO/04 - YoungGods.flac | 0:43
+48 | 1989/AUDIO/07 - YoungGods.flac | 0:55
+49 | 1989/AUDIO/09 - YoungGods.flac | 1:01
+50 | 1989/AUDIO/12 - YoungGods.flac | 1:16
+51 | 1989/AUDIO/15 - YoungGods.flac | 1:11
+52 | 1989/AUDIO/18 - YoungGods.flac | 1:19
+53 | 1989/AUDIO/Glasgow Oct 1989.wav | 49:02
+54 | 1989/AUDIO/02-Young Gods-L'Amourir.flac | 3:21
+55 | 1989/AUDIO/03-Young Gods-Charlotte.flac | 1:28
+56 | 1989/AUDIO/05-Young Gods-September Song.flac | 2:57
+57 | 1989/AUDIO/06-Young Gods-Pas Mal.flac | 1:42
+58 | 1989/AUDIO/02 - YoungGods.flac | 3:17
+59 | 1989/AUDIO/03 - YoungGods.flac | 1:54
+60 | 1989/AUDIO/05 - YoungGods.flac | 2:31
+61 | 1989/AUDIO/06 - YoungGods.flac | 5:12
+62 | 1989/AUDIO/08 - YoungGods.flac | 2:37
+63 | 1989/AUDIO/10 - YoungGods.flac | 1:52
+64 | 1989/AUDIO/11 - YoungGods.flac | 2:00
+65 | 1989/AUDIO/13 - YoungGods.flac | 3:47
+66 | 1989/AUDIO/14 - YoungGods.flac | 2:41
+67 | 1989/AUDIO/16 - YoungGods.flac | 1:39
+68 | 1989/AUDIO/17 - YoungGods.flac | 2:44
+69 | 1989/AUDIO/19 - YoungGods.flac | 4:49
+70 | 1989/AUDIO/01-Young Gods-La Fille De La Mort.flac | 4:44
+71 | 1989/AUDIO/04-Young Gods-Seeraeuber Jenny.flac | 4:15
+72 | 1989/AUDIO/01 - YoungGods.flac | 2:43
+73 | 1989/AUDIO/04 - YoungGods.flac | 1:53
+74 | 1989/AUDIO/07 - YoungGods.flac | 2:24
+75 | 1989/AUDIO/09 - YoungGods.flac | 2:40
+76 | 1989/AUDIO/12 - YoungGods.flac | 3:19

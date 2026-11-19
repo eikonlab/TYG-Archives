@@ -3,7 +3,7 @@
  * ------------------------------------------------------------
  * Rôle : cutClip(ac, url, début, durée) → AudioBuffer de `durée` secondes pris à
  *        `début` secondes dans le fichier, SANS télécharger le fichier entier
- *        (les enregistrements de « 02 AUDIO » font parfois plusieurs centaines de Mo).
+ *        (les enregistrements du disque font parfois plusieurs centaines de Mo).
  * Utilisé par : synth.js.
  *
  * On demande au serveur seulement les octets utiles (en-tête HTTP « Range ») :

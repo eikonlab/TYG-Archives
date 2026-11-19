@@ -8,7 +8,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "medias": "node scripts/optimiser-medias.mjs",
-    "medias:videos": "node scripts/optimiser-medias.mjs --videos"
+    "medias:videos": "node scripts/optimiser-medias.mjs --videos",
+    "extraits": "node scripts/extraits-auto.mjs"
   },
   "dependencies": {
     "react": "^19.3.1",

@@ -62,27 +62,36 @@ Les fichiers sont servis directement depuis `src/img/` : utilise `npm run dev`
 ## Médias sur le disque externe (v4)
 
 Aucun média n'est dans le projet : ce sont des **liens symboliques** vers le disque
-externe **TYG-ARCHIVE**.
+externe **TYG-eikon**, dossier `all-years`, rangé par année :
 
 ```
-src/img              →  /Volumes/TYG-ARCHIVE/00 TYG ARCHIVES by year    photos et vidéos, par année
-src/audio/originaux  →  /Volumes/TYG-ARCHIVE/02 AUDIO                   enregistrements du sampler
+/Volumes/TYG-eikon/all-years/<année>/IMG     photos
+/Volumes/TYG-eikon/all-years/<année>/VIDEO   vidéos
+/Volumes/TYG-eikon/all-years/<année>/AUDIO   enregistrements du sampler
+/Volumes/TYG-eikon/all-years/0000/…          sans date
+
+src/img              →  /Volumes/TYG-eikon/all-years
+src/audio/originaux  →  /Volumes/TYG-eikon/all-years
 ```
 
-- Les photos et vidéos sont lues **en original** directement dans
-  « 00 TYG ARCHIVES by year » (pas de copies légères). Les dossiers techniques du
-  NAS (`@eaDir`, `#recycle`) sont ignorés.
-- Le sampler lit ses sons **directement dans les .wav / .flac de « 02 AUDIO »** :
+- Les photos et vidéos sont lues **en original** directement sur le disque
+  (pas de copies légères). Les fichiers audio de `AUDIO/` sont ignorés par la galerie.
+  Les dossiers techniques (`@eaDir`, `#recycle`, fichiers `._…`) sont ignorés.
+- Le sampler lit ses sons **directement dans les .wav / .flac de `<année>/AUDIO`** :
   seules les 10 secondes utiles sont téléchargées (voir `src/audio/decoupe.js`).
-  La liste des passages (n° | fichier dans 02 AUDIO | moment) est dans
+  La liste des passages (n° | `<année>/AUDIO/fichier` | moment) est dans
   `src/audio/extraits/<année>.txt` : c'est là qu'on change un son.
+- Chaque année prend ses sons **dans son propre dossier** `<année>/AUDIO`
+  (`0000/AUDIO` pour sans-date). `npm run dev` refait les listes tout seul, au
+  démarrage et à chaque .wav / .flac ajouté ou supprimé : il suffit de recharger la page.
+  Les passages choisis à la main et toujours valables sont gardés.
+  (`npm run extraits` fait la même chose à la main, sans lancer le site.)
 - Brancher le disque **avant** de lancer le site. Disque absent : le site démarre
   quand même, mais sans images ni sons (message dans le terminal).
-- Ne pas renommer le disque ni les dossiers « 00 TYG ARCHIVES by year » (attention,
-  son nom finit par une espace) et « 02 AUDIO » : les liens s'arrêteraient.
-- Ajouter des photos : les mettre sur le disque, dans `00 TYG ARCHIVES by year/<année>/`.
+- Ne pas renommer le disque ni le dossier `all-years` : les liens s'arrêteraient.
+- Ajouter des photos : les mettre sur le disque, dans `all-years/<année>/IMG/`.
 - Refaire un lien (si besoin) :
-  `ln -s "/Volumes/TYG-ARCHIVE/00 TYG ARCHIVES by year " src/img`
-  `ln -s "/Volumes/TYG-ARCHIVE/02 AUDIO" src/audio/originaux`
+  `ln -s "/Volumes/TYG-eikon/all-years" src/img`
+  `ln -s "/Volumes/TYG-eikon/all-years" src/audio/originaux`
 - `npm run build` ne copie rien : `dist/media` et `dist/audio` sont des liens vers le
   disque. Pour mettre en ligne, envoyer `dist/` en suivant les liens (ex. `rsync -L`).

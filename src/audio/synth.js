@@ -11,9 +11,9 @@
  * Utilisé par : hooks/useKeyboard.js, hooks/useMidi.js, App.jsx (volume, année).
  *
  * Les extraits sont lus DIRECTEMENT dans les enregistrements d'origine de
- * « 02 AUDIO » sur le disque externe (lien src/audio/originaux) : aucun son n'est
+ * dossiers <année>/AUDIO du disque externe (lien src/audio/originaux) : aucun son n'est
  * copié. La liste des passages est dans audio/extraits/<année>.txt
- * (n° | fichier dans 02 AUDIO | moment dans le fichier) : 10 secondes par passage.
+ * (n° | <année>/AUDIO/fichier | moment dans le fichier) : 10 secondes par passage.
  * Seul ce morceau du fichier est téléchargé (voir decoupe.js), pas le fichier entier.
  * Chaque année (1985 → 2026 + sans-date) a jusqu'à 76 passages, un par touche du
  * clavier MIDI. Seuls les passages enregistrés l'année du dossier sont joués : une
@@ -42,7 +42,7 @@ const CACHE_MAX = 100;     // nombre d'extraits décodés gardés en mémoire (~
 
 const CLIP_LENGTH = 10; // secondes jouées à partir du moment indiqué dans extraits/<année>.txt
 
-// Adresse des enregistrements de « 02 AUDIO » (lien src/audio/originaux vers le disque externe).
+// Adresse des enregistrements (dossiers <année>/AUDIO) (lien src/audio/originaux vers le disque externe).
 const AUDIO_BASE =
   import.meta.env.VITE_AUDIO_URL ??
   (import.meta.env.DEV ? import.meta.env.BASE_URL + "src/audio/originaux/" : "../audio/");
@@ -65,7 +65,7 @@ for (const path of Object.keys(lists).sort()) {
     const [number, file, time] = line.split("|").map((part) => part.trim());
     if (!number || !file || !time) continue;
     const recorded = file.split("/")[0];
-    const sameYear = folder === "sans-date" ? recorded === "no date" : recorded === folder;
+    const sameYear = folder === "sans-date" ? recorded === "0000" || recorded === "no date" : recorded === folder;
     if (!sameYear) continue;
     (CLIPS[folder] ||= []).push({
       id: `${folder}/${number}`,

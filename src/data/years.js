@@ -110,7 +110,7 @@ function createItem({ path, mtime, web, thumb }) {
   const date = dateFromText(name) ?? dateFromText(path);
 
   let yearName = UNDATED;
-  if (parts.length > 1 && /^\d{4}$/.test(parts[0])) yearName = parts[0];
+  if (parts.length > 1 && /^\d{4}$/.test(parts[0]) && parts[0] !== "0000") yearName = parts[0]; // 0000 = sans date
   else if (date) yearName = String(date.getFullYear());
 
   return {

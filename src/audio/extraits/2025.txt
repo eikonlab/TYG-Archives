@@ -29,10 +29,10 @@
 29 | 2005/Young Gods 2005-11-19 Prague/CD02/04. The Young Gods - Gasoline Man.flac | 3:20
 30 | 2005/Young Gods 2005-11-19 Prague/CD02/05. The Young Gods - L'Amourir.flac | 4:26
 31 | 2005/Young Gods 2005-11-19 Prague/CD02/06. The Young Gods - September Song.flac | 3:10
-32 | 2005/Young Gods 2005-07-13 Montreux/01. Secret.flac | 0:37
-33 | 2005/Young Gods 2005-07-13 Montreux/05. Cest Quoi Cest ca.flac | 0:42
-34 | 2005/Young Gods 2005-07-13 Montreux/09. Everywhere.flac | 0:39
-35 | 2005/Young Gods 2005-07-13 Montreux/13. September Song.flac | 0:30
+32 | 2005/AUDIO/01. Secret.flac | 0:37
+33 | 2005/AUDIO/05. Cest Quoi Cest ca.flac | 0:42
+34 | 2005/AUDIO/09. Everywhere.flac | 0:39
+35 | 2005/AUDIO/13. September Song.flac | 0:30
 36 | 2005/Young Gods 2005-07-14 Montreux/03. L'Eau Rouge.flac | 0:35
 37 | 2005/Young Gods 2005-07-14 Montreux/07. Seeraeuber Jenny.flac | 0:54
 38 | 2005/Young Gods 2005-07-14 Montreux/11. Astronomic.flac | 0:58
@@ -46,16 +46,16 @@
 46 | 2005/Young Gods 2005-11-19 Prague/CD01/12. The Young Gods - I'm The Drug.flac | 0:28
 47 | 2005/Young Gods 2005-11-19 Prague/CD02/03. The Young Gods - Fait La Mouette.flac | 1:00
 48 | 2005/Young Gods 2005-11-19 Prague/CD02/07. The Young Gods - Did You Miss Me.flac | 0:44
-49 | 2005/Young Gods 2005-07-13 Montreux/02. Lucidogen.flac | 0:39
-50 | 2005/Young Gods 2005-07-13 Montreux/03. Supersonic.flac | 0:41
-51 | 2005/Young Gods 2005-07-13 Montreux/04. Jimmy.flac | 0:25
-52 | 2005/Young Gods 2005-07-13 Montreux/06. El Magnifico.flac | 0:32
-53 | 2005/Young Gods 2005-07-13 Montreux/07. Super Ready Fragmente.flac | 1:35
-54 | 2005/Young Gods 2005-07-13 Montreux/08. Child In The Tree.flac | 0:32
-55 | 2005/Young Gods 2005-07-13 Montreux/10. Im The Drug.flac | 0:27
-56 | 2005/Young Gods 2005-07-13 Montreux/11. Un Point Cest Tout.flac | 1:00
-57 | 2005/Young Gods 2005-07-13 Montreux/12. Gasoline Man.flac | 0:47
-58 | 2005/Young Gods 2005-07-13 Montreux/15. Skinflowers.flac | 0:44
+49 | 2005/AUDIO/02. Lucidogen.flac | 0:39
+50 | 2005/AUDIO/03. Supersonic.flac | 0:41
+51 | 2005/AUDIO/04. Jimmy.flac | 0:25
+52 | 2005/AUDIO/06. El Magnifico.flac | 0:32
+53 | 2005/AUDIO/07. Super Ready Fragmente.flac | 1:35
+54 | 2005/AUDIO/08. Child In The Tree.flac | 0:32
+55 | 2005/AUDIO/10. Im The Drug.flac | 0:27
+56 | 2005/AUDIO/11. Un Point Cest Tout.flac | 1:00
+57 | 2005/AUDIO/12. Gasoline Man.flac | 0:47
+58 | 2005/AUDIO/15. Skinflowers.flac | 0:44
 59 | 2005/Young Gods 2005-07-14 Montreux/01. Lucidogen.flac | 0:37
 60 | 2005/Young Gods 2005-07-14 Montreux/02. La Fille De La Mort.flac | 1:19
 61 | 2005/Young Gods 2005-07-14 Montreux/04. Kissing The Sun.flac | 0:39
